@@ -1,0 +1,90 @@
+html, body {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 400px;
+    width: 300px;
+    background-color:#F3E267;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.numbers, .operators {
+    background-color: #6777F3;
+    border: 2px solid black;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 57px;
+    margin: 2px;
+    font-size: 22px;
+}
+
+.operators {
+    background-color: #4056ff;
+}
+
+#clear {
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(255, 118, 118);
+    height: 50px;
+    width: 240px;
+    margin: 12px;
+    font-size: 22px;
+}
+
+#equals {
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(51, 202, 64);
+    height: 50px;
+    width: 118px;
+    margin: 2px;
+    font-size: 22px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#display {
+    background-color: lightgrey;
+    height: 100px;
+    width: 300px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.numbers:hover, .operators:hover, #clear:hover, #equals:hover {
+    cursor: grab;
+}
+.numbers:active, .operators:active, #clear:active, #equals:active {
+    background-color: black;
+}
