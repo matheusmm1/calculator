@@ -59,7 +59,7 @@ html, body {
     font-size: 22px;
 }
 
-#buttons {
+#buttons, span {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -68,18 +68,27 @@ html, body {
     align-items: center;
 }
 
-#display {
+#screen {
     background-color: lightgrey;
     height: 100px;
     width: 300px;
     margin-bottom: 10px;
     border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
     font-weight: bold;
     border: 2px solid black;
+    word-break: break-all;
+}
+#previousValue {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16;
+    padding: 10px;
+}
+
+#currentValue {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
 }
 
 .numbers:hover, .operators:hover, #clear:hover, #equals:hover {
