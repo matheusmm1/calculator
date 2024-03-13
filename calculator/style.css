@@ -4,76 +4,65 @@ html, body {
     align-items: center;
     height: 100%;
     width: 100%;
+    background-image: linear-gradient(#AFA4F4, #E9F4A4);
 }
 
 #calculator {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
     height: 400px;
-    width: 300px;
-    background-color:#F3E267;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 20px;
+    width: 350px;
 }
 
 .numbers, .operators {
     background-color: #6777F3;
     border: 2px solid black;
-    border-radius: 12px;
     font-weight: bold;
     color: white;
     height: 50px;
-    width: 57px;
-    margin: 2px;
+    margin: 5px;
     font-size: 22px;
+    flex: 0 1 71px;
 }
 
 .operators {
-    background-color: #4056ff;
+    background-color: #384DEF;
 }
 
 #clear {
     border: 2px solid black;
-    border-radius: 6px;
     font-weight: bold;
     color: white;
-    background-color: rgb(255, 118, 118);
+    background-color: #DEA921;
     height: 50px;
-    width: 240px;
-    margin: 12px;
+    margin: 5px;
     font-size: 22px;
+    flex: 0 1 314px;
 }
 
 #equals {
     border: 2px solid black;
-    border-radius: 6px;
     font-weight: bold;
     color: white;
-    background-color: rgb(51, 202, 64);
+    background-color: #21DE4B;
     height: 50px;
-    width: 118px;
-    margin: 2px;
+    margin: 5px;
     font-size: 22px;
+    flex: 0 1 152px;
 }
 
 #buttons, span {
     display: flex;
-    flex-direction: row;
-    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 #screen {
-    background-color: lightgrey;
+    background-color: white;
     height: 100px;
-    width: 300px;
-    margin-bottom: 10px;
-    border-radius: 12px;
+    width: 321px;
+    margin-bottom: 5px;
     font-weight: bold;
     border: 2px solid black;
     word-break: break-all;
@@ -81,8 +70,8 @@ html, body {
 #previousValue {
     display: flex;
     justify-content: flex-end;
-    font-size: 16;
     padding: 10px;
+    color: #70757a;
 }
 
 #currentValue {
